@@ -1,0 +1,27 @@
+a=document.body.getElementsByClassName("box");
+b=document.getElementById("pic");
+for(let i=0;i<a.length;i++){
+    if(i==0){
+        a[i].addEventListener("mouseover",()=>{
+            b.id="pic1";
+        })
+    }
+    if(i==1){
+        a[i].addEventListener("mouseover",()=>{
+            b.id="pic2";
+        })
+    }
+    if(i==2){
+        a[i].addEventListener("mouseover",()=>{
+            b.id="pic3";
+        })
+    }
+    if(i==3){
+        a[i].addEventListener("mouseover",()=>{
+            b.id="pic4";
+        })
+    }
+    a[i].addEventListener("mouseout",()=>{
+        b.id="pic";
+    })
+}
